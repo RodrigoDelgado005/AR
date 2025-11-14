@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                     document.querySelectorAll('tr').forEach(elm => {
                         elm.style.backgroundColor = ''
                     })
-                    elemento.style.backgroundColor = '#006321'
+                    elemento.style.backgroundColor = '#00779bff'
 
                     //Obtenemos el elemento por su index
                     const dataSeleccionada = data[indexSeleccionada];
@@ -344,6 +344,15 @@ document.addEventListener('DOMContentLoaded', () =>{
                                     'rgb(0, 80, 140)'
                                 ]
                             }]
+                        },
+                        options: {
+                            plugins: {
+                                legend: {
+                                    labels: {
+                                        color: 'white'
+                                    }
+                                }
+                            }
                         }
                     })
                 })
@@ -504,6 +513,15 @@ document.addEventListener('DOMContentLoaded', () =>{
                                             'rgb(0, 80, 140)'
                                         ]
                                     }]
+                                },
+                                options: {
+                                    plugins: {
+                                        legend: {
+                                            labels: {
+                                                color: 'white'
+                                            }
+                                        }
+                                    }
                                 }
                             })
                         })
