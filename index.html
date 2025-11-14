@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body style="background-color: #171A1FFF;">
+        <nav class="navbar navbar-expand-lg border-bottom fixed-top" style="background-color: #1F222A;">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color: #636AE8FF;">
+                    <i class="icon-navbar bi bi-graph-up"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto d-flex gap-5">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">
+                                Dolar Oficial
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">
+                                Dolar Oficial
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">
+                                Dolar Oficial
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">
+                                Dolar Oficial
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <main>
+        <section class="hero d-flex align-items-center justify-content-center min-vh-100 ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-start">
+                        <h4 class="fs-2 fw-bold">Dólar Oficial</h4>
+                        <h1 id="dolar-principal" class="display-3 fw-bold"></h1>
+                        <p class="text-muted">Valores de compra y venta en el mercado paralelo.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <p class="lead">
+                          Mantente al día con los valores del dólar en tiempo real.  
+                          Información precisa para tus decisiones financieras.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <div class="container-dolar row gap-5 text-center"></div>
+            </div>
+        </section>
+        <hr>
+        <section class="dataSenadores">
+            <div class="container py-5">
+                <h1 class="text-center">Senadores</h1>
+                <canvas id="myChart" width="400" height="400"></canvas>
+                <hr>
+                <div class="container d-flex flex-row ">
+                    <div class="container actas-senadores my-5 rounded"></div>
+                    <div class="container">
+                        <canvas id="chartSen" width="100" height="100"></canvas>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <hr>
+        <section class="dataDiputados">
+            <div class="container py-5">
+                <h1 class="text-center">Diputados</h1>
+                <canvas id="cantDip" width="400" height="400"></canvas>
+                <hr>
+                <div class="container d-flex flex-row">
+                    <div class="container actas-diputados my-5"></div>
+                    <div class="container">
+                        <canvas id="chartDip" width="100" height="100"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="datos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
