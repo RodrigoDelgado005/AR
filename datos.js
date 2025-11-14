@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                                 elm.style.backgroundColor = '';
                             })
 
-                            elemento.style.backgroundColor = '#006321'
+                            elemento.style.backgroundColor = '#00779bff'
 
                             const dataSeleccionada = data[indexSeleccionado]
 
