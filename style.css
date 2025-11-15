@@ -71,6 +71,10 @@ th,td {
     padding: 0.5rem;
 }
 
+th{
+    text-align: center;
+}
+
 tbody > tr:hover{
     background-color: #037777;
 }
